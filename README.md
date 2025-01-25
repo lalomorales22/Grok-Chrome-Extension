@@ -1,7 +1,8 @@
 # XAI Summarizer Chrome Extension
+<img width="324" alt="Screenshot 2025-01-24 at 8 01 25 PM" src="https://github.com/user-attachments/assets/33fcd64c-257b-408a-be8d-74b39146df88" />
 <img width="326" alt="Screenshot 2025-01-24 at 8 02 28 PM" src="https://github.com/user-attachments/assets/4fbdcdd7-868c-47ca-8a18-376e719d6bec" />
 <img width="321" alt="Screenshot 2025-01-24 at 8 01 55 PM" src="https://github.com/user-attachments/assets/44b06ca1-bc77-46fc-bbc1-55a695c42597" />
-<img width="324" alt="Screenshot 2025-01-24 at 8 01 25 PM" src="https://github.com/user-attachments/assets/33fcd64c-257b-408a-be8d-74b39146df88" />
+
 
 A Chrome extension that uses the Grok API to generate concise summaries of web pages with chat. This extension demonstrates integration with the Grok API through a secure local backend.
 
