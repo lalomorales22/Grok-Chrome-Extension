@@ -1,0 +1,190 @@
+/*
+   popup.css
+   =========
+   Enhanced dark theme with a more modern look, subtle transitions,
+   and improved UX.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    width: 320px;
+}
+  
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #111;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+  
+.title {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+  
+.refresh-btn {
+    background: #ffffff;
+    border: 2px solid #000000;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.refresh-btn:hover {
+    background: #f0f0f0;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.refresh-btn:active {
+    background: #e0e0e0;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.refresh-btn img {
+    filter: brightness(0);
+}
+  
+.content {
+    padding: 10px;
+    position: relative;
+    min-height: 150px;
+}
+  
+.message {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #bbb;
+}
+  
+.summary, .error {
+    background: #2c2c2c;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: opacity 0.3s ease;
+}
+  
+.error {
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+  
+.hidden {
+    display: none !important;
+}
+  
+.spinner {
+    margin: 30px auto;
+    border: 4px solid #333;
+    border-top: 4px solid #61dafb;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 0.7s linear infinite;
+}
+  
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+  
+.summary, .error, .message {
+    opacity: 1;
+}
+
+.share-container {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.share-btn:hover {
+  background-color: #1884cc;
+}
+
+.share-btn svg {
+  fill: currentColor;
+}
+
+.chat-container {
+  margin-top: 12px;
+  background: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.chat-messages {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+  padding: 4px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.chat-messages .chat-reply {
+  margin: 6px 0;
+  background-color: #3c3c3c;
+  padding: 8px;
+  border-radius: 4px;
+  line-height: 1.3em;
+}
+
+.chat-input {
+  display: flex;
+  gap: 6px;
+}
+
+.chat-input input {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 6px 8px;
+}
+
+.chat-input button {
+  background: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.chat-input button:hover {
+  background: #5ac0e2;
+}
